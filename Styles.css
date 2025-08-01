@@ -1,0 +1,75 @@
+body {
+  margin: 0;
+  background-color: #111;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  transition: background 0.3s, color 0.3s;
+}
+
+.light-mode {
+  background-color: #f1f1f1;
+  color: #000;
+}
+
+#video-container {
+  max-width: 800px;
+  width: 100%;
+  position: relative;
+}
+
+.video-name {
+  text-align: center;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 10px;
+  margin: 0;
+  font-size: 16px;
+}
+
+#video {
+  width: 100%;
+  background: black;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 10px;
+  gap: 10px;
+  transition: opacity 0.5s ease;
+}
+
+#upload {
+  margin-top: 10px;
+  width: 100%;
+}
+
+#video-area {
+  position: relative;
+}
+
+#left-zone,
+#right-zone {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 50%;
+  z-index: 2;
+}
+
+#left-zone {
+  left: 0;
+}
+
+#right-zone {
+  right: 0;
+}
+
+input[type="range"] {
+  flex: 1;
+}
